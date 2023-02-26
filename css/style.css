@@ -1,0 +1,205 @@
+/* Common CSS */
+body{
+	outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #02873a;
+  --bghover: hsl(180, 77%, 41%);
+  --btnhover: #047433;
+
+}
+
+/* Header area */ 
+#header img{
+    height: 95px; 
+}
+
+/* Main Menu */
+#nav_manu{
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index:1;
+
+}
+
+#nav_manu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#nav_manu ul li {
+  float: left;
+}
+
+#nav_manu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#nav_manu ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: var(--bg);
+}
+
+.active:hover {
+  background-color: var(--btnhover);
+}
+
+/*Section left column */
+#demo{
+ margin-top: 10px;
+ border-radius: 7px;
+ box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+/* Section right column */
+#apply{
+  color: #fff;
+  background-color: var(--bg);
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  cursor: pointer;
+}
+
+#apply:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+#login{
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  cursor: pointer;
+}
+
+#login:hover{
+  color: #fff;
+  background-color: var(--bg);
+
+}
+
+#event{
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  cursor: pointer;
+}
+
+#event .event_slider{
+  font-size: 17px;
+  padding: 10px 0;
+}
+
+#event .event_footer{
+  text-align: right;
+  font-size: 15px;
+  text-decoration: 1px solid #c44d2d underline;
+}
+
+
+/* Highlight area */
+.card{
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+.highlight1, .highlight2, .highlight3{
+  color: #fff;
+  background-color: var(--bg);
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.highlight1:hover, .highlight2:hover, .highlight3:hover{
+  background-color: var(--btnhover);
+}
+
+/* Latest news */
+#latest_news{
+  border-bottom: 2px solid #02873a;
+  margin-bottom:10px;
+  padding-bottom:2px; 
+  display: flex;
+  justify-content: space-between;
+}
+
+#latest_news h5{
+  font-weight: 900;
+}
+
+#latest_news p a{
+  text-decoration: none;
+}
+
+.learn_more{
+  text-align: right;
+  margin-top: 20px;
+}
+
+.learn_more p a{
+  padding: 5px;
+  text-decoration: none;
+  box-shadow: 1px 1px 1px #dddcdc;
+
+}
+
+/* Footer area */
+#myfooter{
+  background-color:#aaaaaa;
+  margin-top: 50px;
+  box-shadow: 5px -5px 5px #dddcdc;
+}
+
+#myfooter .row{
+  padding: 40px 0;
+}
+
+#myfooter .row .col-md-4 ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#myfooter .row .col-md-4 ul li{
+    padding: 5px 0;
+}
+
+#myfooter .row .col-md-4 ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+#myfooter .row .col-md-4 ul li a:hover{
+  text-decoration: underline;
+}
+
+#copyright{
+  text-align: center;
+  color: #fff;
+  padding: 20px 0 5px 0;
+  background-color:#333 ;
+}
+
+#copyright p, #copyright a{
+  font-size: 15px;
+  text-decoration: none;
+
+}
